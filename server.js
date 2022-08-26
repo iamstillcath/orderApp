@@ -16,7 +16,7 @@ const userRoute =require("./apis/routes/user")
 mongoose
   .connect(process.env.DB_CONNECTION, {useUnifiedTopology: true, useNewUrlParser: true})
   .then(() => {
-    console.log("success connected to db");
+    // console.log("success connected to db");
   })
   .catch((error) => {
     console.log("this is err",error);
